@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#D8E3DB">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgStudentPic"
+        android:layout_width="149dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/noimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvStudentName"
+        android:layout_width="140dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Student Name"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imgStudentPic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStudentAge"
+        android:layout_width="140dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Student Age"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imgStudentPic"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentName" />
+
+    <TextView
+        android:id="@+id/tvStudentAddress"
+        android:layout_width="140dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Student Address"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imgStudentPic"
+        app:layout_constraintTop_toBottomOf="@+id/tvStudentAge" />
+
+
+    <TextView
+        android:id="@+id/tvStudentGender"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:text="Gender"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tvStudentAddress"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
